@@ -7,14 +7,19 @@ import './HomePage.css'
 function HomePage() {
 
     return (
-        <div className="Titolo">
+        <div className="titolo">
             <header>
                 <h1>Portfolio di Nyx2112</h1>
                 <nav>
-                    <button id="progetti">Proggetti</button>
+                    <button id="home">Home</button>
+                    <button id="progetti">Progetti</button>
                     <button id="design">Design</button>
                 </nav>
             </header>
+            <body className="main">
+            <h1>About Me</h1>
+            <p>TESTO</p>
+            </body>
 
 
 

@@ -1,15 +1,39 @@
 .HomePage {
-    display: grid;
-    grid-template-areas:
-    "header header2 header3"
-    "main main2 main3";
-
 }
 
-.Titolo header {
+.titolo header {
     background-color: var(--persian-indigo);
     display: flex;
     justify-content: space-between;
+    color: var(--mauve-3);
 }
 
 
+.titolo button{
+    display: flex;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.titolo nav{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home{
+    background-color: var(--french-violet);
+}
+#progetti{
+    background-color: var(--pomp-and-power);
+}
+#design{
+    background-color: var(--puce);
+}
+
+.main h1{
+    color: var(--mauve-3);
+}
