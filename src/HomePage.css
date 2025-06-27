@@ -12,7 +12,6 @@
     display: flex;
     justify-content: space-between;
     color: var(--mauve-3);
-
 }
 
 .titolo button{
@@ -47,5 +46,57 @@
 
 }
 .main h1{
-    color: var(--mauve-2);
+    background-color: var(--amethyst);
+    color: var(--persian-indigo);
+    border-radius: 25px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+
+}
+
+.main p{
+    background-color:var(--tekhelet);
+    color: var(--mauve-3);
+    border-radius: 25px;
+    display: inline-block;
+    width: 1041px;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.lista h2{
+    background-color: var(--amethyst);
+    color: var(--persian-indigo);
+    border-radius: 25px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+
+.ul-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* oppure 'center' o 'space-around' */
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.passione, .scrittrice, .volontariato {
+    background-color: var(--tekhelet);
+    color: var(--mauve-3);
+    border-radius: 25px;
+    width: 200px;
+    padding: 20px;
+}
+.scrittrice {
+    width: 430px;
 }
