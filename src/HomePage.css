@@ -1,3 +1,15 @@
 .HomePage {
+    display: grid;
+    grid-template-areas:
+    "header header2 header3"
+    "main main2 main3";
 
 }
+
+.Titolo header {
+    background-color: var(--persian-indigo);
+    display: flex;
+    justify-content: space-between;
+}
+
+
