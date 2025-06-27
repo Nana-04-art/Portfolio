@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Palette Colori Completa - Demo Light Theme</title>
+  <style>
+    :root {
+      /* === VIOLET PALETTE BASE (seconda palette) === */
+      --russian-violet: hsla(262, 100%, 8%, 1);
+      --russian-violet-2: hsla(271, 100%, 14%, 1);
+      --persian-indigo: hsla(271, 85%, 23%, 1);
+      --tekhelet: hsla(270, 73%, 35%, 1);
+      --french-violet: hsla(272, 63%, 46%, 1);
+      --amethyst: hsla(273, 68%, 59%, 1);
+      --heliotrope: hsla(274, 100%, 75%, 1);
+      --mauve: hsla(278, 100%, 83%, 1);
+      --mauve-2: hsla(278, 100%, 87%, 1);
+      --mauve-3: hsla(278, 100%, 89%, 1);
+
+      /* === ACCENT / PRIMARY PALETTE (prima palette) === */
+      --dark-purple: hsla(257, 78%, 7%, 1); /* Accent dark background */
+      --english-violet: hsla(290, 25%, 31%, 1);
+      --plum: hsla(319, 27%, 38%, 1);
+      --pomp-and-power: hsla(309, 24%, 51%, 1);
+      --thulian-pink: hsla(334, 36%, 58%, 1);
+      --puce: hsla(332, 43%, 70%, 1);
+
+      /* --- */
+
+      /* === MAPPED ROLES FOR COMPONENTS (TEMA LIGHT) === */
+
+      /* 🟣 Sfondo */
+      --color-bg: var(--mauve-3);                       /* Sfondo principale chiaro della pagina. */
+      --color-bg-alt: var(--mauve-2);                   /* Sfondo alternativo o hover di aree chiare. */
+      --color-surface: var(--mauve);                    /* Sfondo superfici o pannelli chiari. */
+      --color-deep-bg: var(--english-violet);           /* Sfondo più scuro per elementi che necessitano di contrasto elevato o per sidebar dark in un tema light. */
+      --color-accent-light: var(--heliotrope);          /* Questo colore rimane un accento luminoso, utile su sfondi chiari. */
+
+      /* 🖋 Testo */
+      --color-text: var(--persian-indigo);              /* Testo principale scuro su sfondo chiaro. */
+      --color-text-muted: var(--russian-violet-2);      /* Testo secondario, meno evidente, più chiaro del testo principale ma comunque scuro. */
+
+      /* 🖱 Hover */
+      --color-surface-hover: var(--tekhelet);           /* Hover per superfici o pulsanti (leggermente più scuro per dare visibilità). */
+      --color-accent-hover: var(--plum);                /* Hover per accenti e bottoni (mantiene un colore vivace ma ben visibile). */
+
+      /* 🔘 Bottoni */
+      --color-primary: var(--french-violet);            /* Colore principale per bottoni e link (rimane un viola forte per evidenza). */
+      --color-highlight: var(--amethyst);               /* Colore per evidenziazioni e accenti (chiaro e vibrante su sfondo light). */
+      --color-accent: var(--pomp-and-power);            /* Colore secondario per bottoni o elementi interattivi. */
+      --color-accent-muted: var(--thulian-pink);        /* Colore per elementi disattivati o meno evidenti (mantiene la sua funzione di "muted"). */
+      --color-accent-soft: var(--puce);                 /* Colore per bottoni soft o sfondi chiari di accento (molto chiaro, quasi un rosa pastello). */
+
+      /* Colori Aggiuntivi */
+      --color-english-violet: var(--english-violet);    /* Colore aggiuntivo, utile come testo su sfondi chiari o per bordi scuri. */
+      --color-border: var(--persian-indigo);            /* Colore per bordi o elementi di separazione (un viola scuro per un buon contrasto). */
+    }
+
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 2rem;
+      line-height: 1.5;
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+      color: var(--color-primary); /* Per il tema light, ho usato primary per i titoli per un buon contrasto */
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .color-block {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.8rem 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      background-color: var(--color-surface); /* Aggiunto sfondo per evidenziare i blocchi */
+      border: 2px solid var(--color-border);
+    }
+
+    .color-swatch {
+      width: 80px;
+      height: 50px;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1); /* Ombra più leggera per tema light */
+      flex-shrink: 0;
+    }
+
+    .color-info {
+      flex-grow: 1;
+    }
+
+    .color-name {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--color-text); /* Testo principale per il nome */
+    }
+
+    .color-hsla {
+      font-family: monospace;
+      font-size: 0.9rem;
+      color: var(--color-text-muted); /* Testo muted per HSLA */
+      margin-bottom: 0.3rem;
+    }
+
+    .color-usage {
+      font-size: 0.9rem;
+      color: var(--color-text-muted); /* Testo muted per l'utilizzo */
+    }
+
+    /* Pulsanti di esempio */
+    .button-sample {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: var(--color-text); /* Testo scuro su bottone primario */
+    }
+    .btn-primary:hover {
+      background-color: var(--color-accent-hover); /* Uso l'accent-hover per il primary */
+    }
+    .btn-highlight {
+      background-color: var(--color-highlight);
+      color: var(--color-text); /* Testo scuro su highlight */
+    }
+    .btn-highlight:hover {
+      filter: brightness(0.9); /* Scurisce leggermente per l'hover su un colore chiaro */
+    }
+    .btn-accent {
+      background-color: var(--color-accent);
+      color: var(--color-text);
+    }
+    .btn-accent-hover:hover {
+      background-color: var(--color-accent-hover);
+    }
+    .btn-muted {
+      background-color: var(--color-accent-muted);
+      color: var(--color-text);
+    }
+    .btn-muted[disabled] {
+      cursor: not-allowed;
+      opacity: 0.6; /* Rende più evidente che è disabilitato in un tema light */
+    }
+  </style>
+</head>
+<body>
+
+<h1>Demo Palette Colori Completa - Tema Light</h1>
+
+<section>
+  <h2>⚪ Sfondo</h2>
+  <div class="color-block" style="background-color: var(--color-bg); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-bg);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-bg (var(--mauve-3))</div>
+      <div class="color-hsla">hsla(278, 100%, 89%, 1)</div>
+      <div class="color-usage">Sfondo principale chiaro della pagina.</div>
+    </div>
+  </div>
+  <div class="color-block" style="background-color: var(--color-bg-alt); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-bg-alt);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-bg-alt (var(--mauve-2))</div>
+      <div class="color-hsla">hsla(278, 100%, 87%, 1)</div>
+      <div class="color-usage">Sfondo alternativo o hover di aree chiare.</div>
+    </div>
+  </div>
+  <div class="color-block" style="background-color: var(--color-surface); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-surface);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-surface (var(--mauve))</div>
+      <div class="color-hsla">hsla(278, 100%, 83%, 1)</div>
+      <div class="color-usage">Sfondo superfici o pannelli chiari.</div>
+    </div>
+  </div>
+  <div class="color-block" style="background-color: var(--color-deep-bg); color: var(--color-accent-light);">
+    <div class="color-swatch" style="background-color: var(--color-deep-bg);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-deep-bg (var(--english-violet))</div>
+      <div class="color-hsla">hsla(290, 25%, 31%, 1)</div>
+      <div class="color-usage">Sfondo più scuro per elementi di contrasto o sidebar dark.</div>
+    </div>
+  </div>
+  <div class="color-block" style="background-color: var(--color-accent-light); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-accent-light);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-accent-light (var(--heliotrope))</div>
+      <div class="color-hsla">hsla(274, 100%, 75%, 1)</div>
+      <div class="color-usage">Accento chiaro, usato per evidenziare o illuminare.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🖋 Testo</h2>
+  <div class="color-block" style="background-color: var(--color-bg); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-text);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-text (var(--persian-indigo))</div>
+      <div class="color-hsla">hsla(271, 85%, 23%, 1)</div>
+      <div class="color-usage">Testo principale scuro su sfondo chiaro.</div>
+    </div>
+  </div>
+  <div class="color-block" style="background-color: var(--color-bg); color: var(--color-text-muted);">
+    <div class="color-swatch" style="background-color: var(--color-text-muted);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-text-muted (var(--russian-violet-2))</div>
+      <div class="color-hsla">hsla(271, 100%, 14%, 1)</div>
+      <div class="color-usage">Testo secondario, meno evidente, più chiaro del testo principale.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🖱 Hover</h2>
+  <div class="color-block" style="background-color: var(--color-surface-hover); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-surface-hover);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-surface-hover (var(--tekhelet))</div>
+      <div class="color-hsla">hsla(270, 73%, 35%, 1)</div>
+      <div class="color-usage">Hover per superfici o pulsanti.</div>
+    </div>
+  </div>
+  <div class="color-block" style="background-color: var(--color-accent-hover); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-accent-hover);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-accent-hover (var(--plum))</div>
+      <div class="color-hsla">hsla(319, 27%, 38%, 1)</div>
+      <div class="color-usage">Hover per accenti e bottoni.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🔘 Bottoni</h2>
+  <div class="color-block" style="background-color: var(--color-primary); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-primary);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-primary (var(--french-violet))</div>
+      <div class="color-hsla">hsla(272, 63%, 46%, 1)</div>
+      <div class="color-usage">Colore principale per bottoni e link.</div>
+      <button class="button-sample btn-primary">Bottone Primario</button>
+    </div>
+  </div>
+  <div class="color-block" style="background-color: var(--color-highlight); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-highlight);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-highlight (var(--amethyst))</div>
+      <div class="color-hsla">hsla(273, 68%, 59%, 1)</div>
+      <div class="color-usage">Colore per evidenziazioni e accenti.</div>
+      <button class="button-sample btn-highlight">Evidenziato</button>
+    </div>
+  </div>
+  <div class="color-block" style="background-color: var(--color-accent); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-accent);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-accent (var(--pomp-and-power))</div>
+      <div class="color-hsla">hsla(309, 24%, 51%, 1)</div>
+      <div class="color-usage">Colore secondario per bottoni o elementi interattivi.</div>
+      <button class="button-sample btn-accent btn-accent-hover">Bottone Accento</button>
+    </div>
+  </div>
+  <div class="color-block" style="background-color: var(--color-accent-muted); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-accent-muted);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-accent-muted (var(--thulian-pink))</div>
+      <div class="color-hsla">hsla(334, 36%, 58%, 1)</div>
+      <div class="color-usage">Colore per elementi disattivati o meno evidenti.</div>
+      <button class="button-sample btn-muted" disabled>Disabilitato</button>
+    </div>
+  </div>
+  <div class="color-block" style="background-color: var(--color-accent-soft); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-accent-soft);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-accent-soft (var(--puce))</div>
+      <div class="color-hsla">hsla(332, 43%, 70%, 1)</div>
+      <div class="color-usage">Colore per bottoni soft o sfondi chiari di accento.</div>
+      <button class="button-sample" style="background-color: var(--color-accent-soft); color: var(--color-text);">Bottone Soft</button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🎨 Colori Aggiuntivi</h2>
+  <div class="color-block" style="background-color: var(--color-bg); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-english-violet);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-english-violet (var(--english-violet))</div>
+      <div class="color-hsla">hsla(290, 25%, 31%, 1)</div>
+      <div class="color-usage">Colore aggiuntivo, ad esempio per elementi discreti o testi su sfondi chiari.</div>
+    </div>
+  </div>
+  <div class="color-block" style="background-color: var(--color-bg); color: var(--color-text);">
+    <div class="color-swatch" style="background-color: var(--color-border);"></div>
+    <div class="color-info">
+      <div class="color-name">--color-border (var(--persian-indigo))</div>
+      <div class="color-hsla">hsla(271, 85%, 23%, 1)</div>
+      <div class="color-usage">Colore per bordi o elementi di separazione.</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

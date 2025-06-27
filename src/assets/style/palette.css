@@ -1,0 +1,82 @@
+:root {
+    /* === VIOLET PALETTE BASE (seconda palette) === */
+    --russian-violet: hsla(262, 100%, 8%, 1);
+    --russian-violet-2: hsla(271, 100%, 14%, 1);
+    --persian-indigo: hsla(271, 85%, 23%, 1);
+    --tekhelet: hsla(270, 73%, 35%, 1);
+    --french-violet: hsla(272, 63%, 46%, 1);
+    --amethyst: hsla(273, 68%, 59%, 1);
+    --heliotrope: hsla(274, 100%, 75%, 1);
+    --mauve: hsla(278, 100%, 83%, 1);
+    --mauve-2: hsla(278, 100%, 87%, 1);
+    --mauve-3: hsla(278, 100%, 89%, 1);
+
+    /* === ACCENT / PRIMARY PALETTE (prima palette) === */
+    --dark-purple: hsla(257, 78%, 7%, 1); /* Accent dark background */
+    --english-violet: hsla(290, 25%, 31%, 1);
+    --plum: hsla(319, 27%, 38%, 1);
+    --pomp-and-power: hsla(309, 24%, 51%, 1);
+    --thulian-pink: hsla(334, 36%, 58%, 1);
+    --puce: hsla(332, 43%, 70%, 1);
+
+
+    /* === MAPPED ROLES FOR COMPONENTS (TEMA DARK - DEFAULT) === */
+
+    /* 🟣 Sfondo */
+    --color-bg: var(--russian-violet);                  /* Sfondo principale scuro. */
+    --color-bg-alt: var(--russian-violet-2);            /* Sfondo alternativo o hover di aree scure. */
+    --color-surface: var(--persian-indigo);             /* Sfondo superfici o pannelli. */
+    --color-deep-bg: var(--dark-purple);                /* Sfondo molto scuro o overlay. */
+    --color-accent-light: var(--heliotrope);            /* Accento chiaro, usato per evidenziare o illuminare. */
+
+    /* 🖋 Testo */
+    --color-text: var(--mauve-3);                       /* Testo principale chiaro su sfondo scuro. */
+    --color-text-muted: var(--mauve);                   /* Testo secondario, meno evidente. */
+
+    /* 🖱 Hover */
+    --color-surface-hover: var(--tekhelet);             /* Hover per superfici o pulsanti. */
+    --color-accent-hover: var(--plum);                  /* Hover per accenti e bottoni. */
+
+    /* 🔘 Bottoni */
+    --color-primary: var(--french-violet);              /* Colore principale per bottoni e link. */
+    --color-highlight: var(--amethyst);                 /* Colore per evidenziazioni e accenti. */
+    --color-accent: var(--pomp-and-power);              /* Colore secondario per bottoni o elementi interattivi. */
+    --color-accent-muted: var(--thulian-pink);          /* Colore per elementi disattivati o meno evidenti. */
+    --color-accent-soft: var(--puce);                   /* Colore per bottoni soft o sfondi chiari di accento. */
+
+    /* Colori Aggiuntivi */
+    --color-english-violet: var(--english-violet);      /* Colore aggiuntivo, ad esempio per elementi discreti o testi su sfondi chiari. */
+    --color-border: var(--mauve-2);                     /* Colore per bordi o elementi di separazione. */
+}
+
+
+:root.light-theme {
+
+    /* === MAPPED ROLES FOR COMPONENTS (TEMA LIGHT - con classe .light-theme) === */
+    /* 🟣 Sfondo */
+    --color-bg: var(--mauve-3);                       /* Sfondo principale chiaro per la pagina. */
+    --color-bg-alt: var(--mauve-2);                   /* Sfondo leggermente più scuro per sezioni alternative o aree di contenuto. */
+    --color-surface: var(--mauve);                    /* Sfondo per card, modali o elementi UI che "emergono" dallo sfondo. */
+    --color-deep-bg: var(--english-violet);           /* Sfondo scuro di contrasto, utile per sidebar o header in un tema light. */
+    --color-accent-light: var(--heliotrope);          /* Accento luminoso per dettagli, evidenziazioni o stati attivi. */
+
+    /* 🖋 Testo */
+    --color-text: var(--persian-indigo);              /* Testo principale scuro per garantire leggibilità su sfondi chiari. */
+    --color-text-muted: var(--russian-violet-2);      /* Testo secondario o meno enfatizzato, un po' più chiaro del testo principale. */
+
+    /* 🖱 Hover */
+    --color-surface-hover: var(--tekhelet);           /* Colore per lo stato di hover su superfici o bottoni, fornisce un leggero scurimento. */
+    --color-accent-hover: var(--plum);                /* Colore di hover per elementi di accento o bottoni, un viola/rosa più scuro. */
+
+    /* 🔘 Bottoni */
+    --color-primary: var(--french-violet);            /* Colore primario per bottoni e azioni principali, un viola vibrante. */
+    --color-highlight: var(--amethyst);               /* Colore per bottoni o elementi di forte evidenza, un viola brillante. */
+    --color-accent: var(--pomp-and-power);            /* Colore secondario per bottoni o elementi interattivi, un rosa-viola più tenue. */
+    --color-accent-muted: var(--thulian-pink);        /* Colore per elementi disattivati, meno visibili o "muted", un rosa smorzato. */
+    --color-accent-soft: var(--puce);                 /* Colore molto chiaro e delicato per bottoni soft o sfondi di accento leggeri. */
+
+    /* Colori Aggiuntivi */
+    --color-english-violet: var(--english-violet);    /* Viola smorzato e profondo, utile per bordi o testi su sfondi molto chiari. */
+    --color-border: var(--persian-indigo);            /* Colore scuro per i bordi, offre una chiara distinzione tra gli elementi. */
+}
+
