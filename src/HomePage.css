@@ -1,13 +1,19 @@
+/*CSS HOMEPAGE*/
 .HomePage {
 }
 
+/*CSS classe TITOLO*/
+.header{
+    width: 100vw;
+    margin: 0;
+}
 .titolo header {
     background-color: var(--persian-indigo);
     display: flex;
     justify-content: space-between;
     color: var(--mauve-3);
-}
 
+}
 
 .titolo button{
     display: flex;
@@ -24,6 +30,7 @@
     align-items: center;
 }
 
+/*CSS PULSANTI TITOLO*/
 #home{
     background-color: var(--french-violet);
 }
@@ -34,6 +41,11 @@
     background-color: var(--puce);
 }
 
+
+/*CSS classe MAIN*/
+.main{
+
+}
 .main h1{
-    color: var(--mauve-3);
+    color: var(--mauve-2);
 }
