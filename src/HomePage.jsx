@@ -2,7 +2,8 @@ import {useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './assets/style/palette.css';
-import './HomePage.css'
+import './assets/style/HomePage.css';
+import './Progetti.jsx'
 
 function HomePage() {
 

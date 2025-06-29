@@ -96,6 +96,9 @@
     border-radius: 25px;
     width: 200px;
     padding: 20px;
+    justify-content: center;
+    align-items: normal;
+
 }
 .scrittrice {
     width: 430px;
