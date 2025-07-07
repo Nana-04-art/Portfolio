@@ -7,27 +7,6 @@
     width: 100vw;
     margin: 0;
 }
-.titolo header {
-    background-color: var(--persian-indigo);
-    display: flex;
-    justify-content: space-between;
-    color: var(--mauve-3);
-}
-
-.titolo button{
-    display: flex;
-    border: none;
-    padding: 15px 15px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.titolo nav{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
 
 /*CSS PULSANTI TITOLO*/
 #home{
