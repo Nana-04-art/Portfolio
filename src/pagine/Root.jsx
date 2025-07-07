@@ -8,7 +8,7 @@ import {NavLink, Outlet} from "react-router-dom";
 
 export const Root = () => {
     return (
-        <div>
+        <>
             <div className="titolo">
                 <header>
                     <h1>Portfolio di Nyx2112</h1>
@@ -20,6 +20,6 @@ export const Root = () => {
                 </header>
             </div>
             <Outlet />
-        </div>
+        </>
     );
 };

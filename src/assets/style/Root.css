@@ -11,6 +11,7 @@
     padding: 15px 15px;
     border-radius: 10px;
     cursor: pointer;
+
 }
 
 .titolo nav{
@@ -18,4 +19,23 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
+    padding-right: 30px;
+}
+#root{
+    width: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+/*CSS PULSANTI TITOLO*/
+#home{
+    background-color: var(--french-violet);
+}
+#progetti{
+    background-color: var(--pomp-and-power);
+}
+#design{
+    background-color: var(--puce);
 }

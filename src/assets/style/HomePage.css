@@ -8,21 +8,10 @@
     margin: 0;
 }
 
-/*CSS PULSANTI TITOLO*/
-#home{
-    background-color: var(--french-violet);
-}
-#progetti{
-    background-color: var(--pomp-and-power);
-}
-#design{
-    background-color: var(--puce);
-}
-
-
 /*CSS classe MAIN*/
 .main{
-
+    display: flex;
+    flex-direction: column;
 }
 .main h1{
     background-color: var(--amethyst);
