@@ -1,5 +1,25 @@
-[{
-  "id": 1,
-  "wireframe": "public/foto/wireframe/HomePage-Wireframe.png",
-  "mockUp": "public/foto/mock-up/HomePage.png"
-}]
+[
+  {
+    "id": 1,
+    "titolo": "Home",
+    "wireframe": "public/foto/wireframe/HomePage-Wireframe.png",
+    "mockUp": "public/foto/mock-up/HomePage.png"
+  },
+  {
+    "id": 2,
+    "titolo": "Progetti",
+    "wireframe": "public/foto/wireframe/HomePage-Wireframe.png",
+    "mockUp": "public/foto/mock-up/HomePage.png"
+  },
+  {
+    "id": 3,
+    "titolo": "Design",
+    "wireframe": "public/foto/wireframe/HomePage-Wireframe.png",
+    "mockUp": "public/foto/mock-up/HomePage.png"
+  },
+  {
+    "id": 4,
+    "wireframe": "public/foto/wireframe/HomePage-Wireframe.png",
+    "mockUp": "public/foto/mock-up/HomePage.png"
+  }
+]

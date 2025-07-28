@@ -8,10 +8,13 @@ import {NavLink, Outlet} from "react-router-dom";
 
 export const Root = () => {
     return (
-        <>
+        <div className="layout">
             <div className="titolo">
                 <header>
-                    <h1>Portfolio di Natalia</h1>
+                    <div className="barra">
+                        <img src="public/foto/logo/Logo.svg" alt="Logo" className="logo"/>
+                        <h1>Portfolio di Natalia</h1>
+                    </div>
                     <nav>
                         <NavLink to="/" id="home">Home</NavLink>
                         <NavLink to="progetti" id="progetti">Progetti</NavLink>
@@ -19,7 +22,14 @@ export const Root = () => {
                     </nav>
                 </header>
             </div>
-            <Outlet/>
-        </>
+
+            <main className="main-content">
+                <Outlet/>
+            </main>
+
+            <footer>
+                <p>© 2025 Natalia. Fatto con amore, tanto viola e tante altre lacrime.</p>
+            </footer>
+        </div>
     );
 };

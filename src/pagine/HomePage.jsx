@@ -20,9 +20,9 @@ function HomePage() {
                     imparare continuamente e crescere nel settore informatico.<br/>
                     Ho creato questo sito per condividere alcuni dei progetti che ho realizzato durante questo corso.
                 </p>
-                <p>Non so se hai notato ma se guardi in alto a sinistra troverai tre
+                <p>Non so se hai notato ma se guardi in alto a destra troverai tre
                     pulsanti: <span class="colore1">"Home"</span>, <span class="colore2">"Progetti"</span> e <span
-                        class="colore3">"Design"</span> — ti invito a esplorare e divertirti!<br/>
+                        class="colore3">"Design"</span> — ti invito a esplorare tutti i contenuti del sito e divertirti!<br/>
                 </p>
                 <p class="ultimo"> Se vuoi scoprire qualcosina in più su di me dai un’occhiata qui sotto:</p>
             </div>
@@ -42,9 +42,6 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            <footer>
-                <p>© 2025 Natalia. Made with amore e tanto viola.</p>
-            </footer>
         </div>
 
 

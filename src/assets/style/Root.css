@@ -1,8 +1,35 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--background-alt);
+    padding: 20px;
+    text-align: center;
+}
+
+.titolo{
+    width: 100%;
+}
+
 .titolo header {
     background-color: var(--background-alt);
     display: flex;
     justify-content: space-between;
-    color: var(--mauve-3);
+    color: var(--text-soft);
     width: 100%;
 
 }
@@ -27,17 +54,12 @@
 .titolo h1 {
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
     color: var(--button-primary-light);
-
+    width: 100%;
 }
 
 #root {
     width: 100%;
-}
-
-body {
-    margin: 0;
 }
 
 /*CSS PULSANTI TITOLO*/
@@ -75,4 +97,23 @@ body {
 #design:hover {
     background-color: var(--hover-highlight);
     color: var(--section-dark);
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 100px; /* o 10vh, o come preferisci */
+}
+
+.logo {
+    height: 100%; /* 80% dell'altezza della barra */
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.logo:hover{
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    transform: translate(20%, 40%) scale(2.6);
 }

@@ -2,8 +2,11 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(auto-fit,1fr);
-    padding: 50px;
+    grid-template-rows: minmax(auto, auto);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-items: center;
+    row-gap: 50px;
 }
 
 .itemCard{
@@ -14,18 +17,19 @@
     background-color: var(--color-card-alt);
     border-radius: 10px;
     padding: 20px;
+
+
 }
 
 .itemThumbnail{
     width: 30%;
-    transition: transform 0.5s ease;
+
 }
 .itemThumbnail:hover{
+    transition: transform 0.5s ease;
     cursor: pointer;
-    transform: translateY(-25%) scale(2);
-
+    transform: translateY(-25%) scale(2.5);
 }
-
 
 .itemInfo{
     padding-left:10px;

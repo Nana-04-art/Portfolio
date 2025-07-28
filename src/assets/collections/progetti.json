@@ -18,6 +18,13 @@
     "descrizione": "I mock-up ",
     "link": "http://localhost:5173/design",
     "img": "public/foto/HomePage.png"
+  },
+  {
+    "id": 4,
+    "titolo": "Portfolio - Design",
+    "descrizione": "I mock-up ",
+    "link": "http://localhost:5173/design",
+    "img": "public/foto/HomePage.png"
   }
 
 ]

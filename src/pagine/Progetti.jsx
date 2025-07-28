@@ -22,9 +22,6 @@ function Progetti() {
                     </div>
                 ))}
             </div>
-            <footer>
-                <p>© 2025 Natalia. Made with amore e tanto viola.</p>
-            </footer>
         </>
     );
 };
