@@ -1,50 +1,23 @@
 [{
   "id": 1,
-  "titolo": "Portfolio-Home Page",
-  "descrizione": "About Me",
+  "titolo": "Portfolio - Home",
+  "descrizione": "Su di me",
   "link": "http://localhost:5173/",
-  "img": "public/foto/HomePage.png"
+  "img": "public/foto/progettini/Portfolio-HomePage.png"
 },
   {
     "id": 2,
     "titolo": "Portfolio - Progetti",
-    "descrizione": "Le preview dei proggetti",
-    "link": "http://localhost:5173/",
+    "descrizione": "Preview dei proggetti",
+    "link": "http://localhost:5173/progetti",
     "img": "public/foto/HomePage.png"
   },
   {
     "id": 3,
     "titolo": "Portfolio - Design",
-    "descrizione": "I mock-up che ho realizzato",
-    "link": "http://localhost:5173/",
-    "img": "public/foto/HomePage.png"
-  },
-  {
-    "id": 4,
-    "titolo": "Portfolio",
-    "descrizione": "Mi presento",
-    "link": "http://localhost:5173/",
-    "img": "public/foto/HomePage.png"
-  },
-  {
-    "id": 5,
-    "titolo": "Portfolio",
-    "descrizione": "Mi presento",
-    "link": "http://localhost:5173/",
-    "img": "public/foto/HomePage.png"
-  },
-  {
-    "id": 6,
-    "titolo": "Portfolio",
-    "descrizione": "Mi presento",
-    "link": "http://localhost:5173/",
-    "img": "public/foto/HomePage.png"
-  },
-  {
-    "id": 7,
-    "titolo": "Portfolio",
-    "descrizione": "Mi presento",
-    "link": "http://localhost:5173/",
+    "descrizione": "I mock-up ",
+    "link": "http://localhost:5173/design",
     "img": "public/foto/HomePage.png"
   }
+
 ]

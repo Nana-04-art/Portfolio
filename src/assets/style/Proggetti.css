@@ -1,30 +1,41 @@
-.Progetti {
-
-}
 .progettini{
+    width: 100%;
     display: grid;
-    grid-template-columns: 430px 430px 430px;
-    grid-template-rows: repeat(auto-fit,127px);
-    padding-top: 50px;
-    gap: 50px;
-
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fit,1fr);
+    padding: 50px;
 }
 
 .itemCard{
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 100%;
     box-sizing: border-box;
-    background-color: var(--plum);
-    border-radius: 25px;
+    background-color: var(--color-card-alt);
+    border-radius: 10px;
     padding: 20px;
 }
 
 .itemThumbnail{
     width: 30%;
+    transition: transform 0.5s ease;
+}
+.itemThumbnail:hover{
+    cursor: pointer;
+    transform: translateY(-25%) scale(2);
+
 }
 
-.itemCard h5{
-    padding-left:20px;
-    margin: 0;
+
+.itemInfo{
+    padding-left:10px;
+    width: 100%;
+}
+
+.h5{
+    font-family: var(--sottotitolo);
+}
+
+.p{
+    font-family: var(--font-base);
 }

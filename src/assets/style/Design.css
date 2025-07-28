@@ -1,0 +1,34 @@
+.disegni{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit,2fr);
+    padding: 80px;
+    gap: 80px;
+}
+
+
+.IMGCard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--plum);
+    border-radius: 10px;
+    padding-left: 30px;
+}
+
+.itemInfo h5{
+    margin: 0;
+}
+
+.box{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.immagine{
+    width: 40%;
+    height: 100%;
+}

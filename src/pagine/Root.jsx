@@ -11,15 +11,15 @@ export const Root = () => {
         <>
             <div className="titolo">
                 <header>
-                    <h1>Portfolio di Nyx2112</h1>
+                    <h1>Portfolio di Natalia</h1>
                     <nav>
                         <NavLink to="/" id="home">Home</NavLink>
                         <NavLink to="progetti" id="progetti">Progetti</NavLink>
-                        <NavLink  to="design" id="design">Design</NavLink>
+                        <NavLink to="design" id="design">Design</NavLink>
                     </nav>
                 </header>
             </div>
-            <Outlet />
+            <Outlet/>
         </>
     );
 };

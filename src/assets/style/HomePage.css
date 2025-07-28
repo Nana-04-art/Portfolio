@@ -1,5 +1,18 @@
 /*CSS HOMEPAGE*/
-.HomePage {
+.HomePage{
+
+}
+.HomePage .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.HomePage .lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*CSS classe TITOLO*/
@@ -9,65 +22,60 @@
 }
 
 /*CSS classe MAIN*/
-.main{
-    display: flex;
-    flex-direction: column;
-}
-.main h1{
-    background-color: var(--amethyst);
-    color: var(--persian-indigo);
+.main h2{
     border-radius: 25px;
     display: inline-block;
-    width: 300px;
+    width: 400px;
     text-align: center;
 
 }
 
 .main p{
-    background-color:var(--tekhelet);
-    color: var(--mauve-3);
-    border-radius: 25px;
+    border-radius: 10px;
     display: inline-block;
-    width: 1041px;
     padding: 10px 20px;
-    justify-content: center;
-}
-
-.lista {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: left;
-}
-
-.lista h2{
-    background-color: var(--amethyst);
-    color: var(--persian-indigo);
-    border-radius: 25px;
-    display: inline-block;
-    width: 300px;
     text-align: center;
+    border: 1px solid var(--button-primary);
+
+}
+.colore1{
+    background-color: var(--button-primary);
+    color: var(--text);
+}
+.colore2{
+    background-color: var(--hover-accent);
+    color: var(--background);
+}
+.colore3{
+    background-color: var(--button-primary-light);
+    color: var(--background);
 }
 
 
-.ul-container {
+
+
+/*CSS classe LISTA*/
+.info {
     display: flex;
     flex-direction: row;
     justify-content: space-between; /* oppure 'center' o 'space-around' */
     gap: 30px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.passione, .scrittrice, .volontariato {
-    background-color: var(--tekhelet);
-    color: var(--mauve-3);
-    border-radius: 25px;
-    width: 200px;
+.scrittrice, .volontariato {
+    color: var(--text);
+    border-radius: 10px;
     padding: 20px;
-    justify-content: center;
-    align-items: normal;
+    border: 1px solid var(--button-primary);
+    text-align: center;
 
 }
 .scrittrice {
     width: 430px;
 }
+
+
+
+
+

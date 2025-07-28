@@ -1,6 +1,7 @@
 import Progetti from "./pagine/Progetti.jsx";
 import HomePage from "./pagine/HomePage.jsx";
 import Design from "./pagine/Design.jsx";
+import Esempio from "./pagine/Esempio.jsx";
 import {Root} from "./pagine/Root.jsx";
 
 export const routes = [
@@ -26,7 +27,12 @@ export const routes = [
             {
                 path: 'design',
                 element: <Design/>,
+            },
+            {
+                path: 'esempio',
+                element: <Esempio/>,
             }
+
         ]
     }
 ];

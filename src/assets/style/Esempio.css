@@ -1,0 +1,132 @@
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.homepage section {
+    padding: 4rem 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: var(--section-dark);
+    text-align: center;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.hero h1 {
+    color: var(--button-primary-light);
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    color: var(--text-soft);
+    font-size: 1.25rem;
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.primary {
+    background-color: var(--button-primary);
+    color: var(--text);
+    border-color: var(--button-primary-light);
+}
+
+.primary:hover {
+    background-color: var(--button-primary-hover);
+}
+
+.accent {
+    background-color: var(--hover-accent);
+    color: var(--background);
+    border-color: var(--color-card-dark);
+}
+
+.accent:hover {
+    background-color: var(--color-accent-hover);
+    color: var(--section-dark);
+}
+
+.projects {
+    background-color: var(--background-alt);
+}
+
+.projects h2,
+.about h2,
+.contact h2 {
+    color: var(--hover-highlight);
+}
+
+.card-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: var(--button-primary);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card.alt {
+    background-color: var(--color-card-alt);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--text-light);
+}
+
+.about {
+    background-color: var(--color-border);
+    color: var(--text-light);
+    border-top: 2px solid var(--color-card-dark);
+}
+
+.contact {
+    background-color: var(--color-card-dark);
+    color: var(--text);
+}
+
+.contact form {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: var(--background-alt);
+    color: var(--text-soft);
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid var(--button-primary-light);
+}

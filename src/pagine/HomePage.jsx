@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
 import '../assets/style/palette.css';
@@ -12,57 +12,42 @@ function HomePage() {
         <div className="HomePage">
 
             <div className="main">
-                <h1>About Me:</h1>
-                <p>Ciao! Mi chiamo Natalia e sono una persona intraprendente, curiosa e creativa.
-                    Attualmente sto
-                    frequentando il corso Software Architect Specialist e sono particolarmente attratta
-                    dal mondo dello sviluppo front-end. Allo stesso tempo, nutro un forte interesse per l’editoria e la
-                    scrittura,
-                    che porto con me come passione.<br/>
+                <h2>ALCUNE COSE SU DI ME:</h2>
+                <p>Ciao! Mi chiamo Natalia e attualmente sto frequentando il corso Software Architect Specialist. <br/>
+                    Sono particolarmente attratta dal mondo dello sviluppo front-end e allo stesso tempo, nutro un forte
+                    interesse per l’editoria e la scrittura, che porto con me come passione.<br/>
                     Sono aperta a diverse opportunità professionali, guidata dalla voglia di mettermi alla prova,
                     imparare continuamente e crescere nel settore informatico.<br/>
-                    Ho creato questo sito per condividere alcuni dei progetti che ho realizzato durante il corso. <br/>
-                    Non so se hai notato ma se guardi in alto a sinistra troverai tre pulsanti: Home, Progetti e Design
-                    — ti invito a esplorare e divertirti!<br/>
-                    Se vuoi scoprire di più su di me, dai un’occhiata alla lista qui sotto.
+                    Ho creato questo sito per condividere alcuni dei progetti che ho realizzato durante questo corso.
                 </p>
+                <p>Non so se hai notato ma se guardi in alto a sinistra troverai tre
+                    pulsanti: <span class="colore1">"Home"</span>, <span class="colore2">"Progetti"</span> e <span
+                        class="colore3">"Design"</span> — ti invito a esplorare e divertirti!<br/>
+                </p>
+                <p class="ultimo"> Se vuoi scoprire qualcosina in più su di me dai un’occhiata qui sotto:</p>
             </div>
             <div className="lista">
-                <h2>Altre cose su di me:</h2>
+                <h2>ALTRE INFORMAZIONI:</h2>
 
-                <div className="ul-container">
-                    <div>
-                        <ul className="passione">
-                            <p>Sono appassionata di:</p>
-                            <li>Scrittura</li>
-                            <li>Lettura</li>
-                            <li>Gastronomia</li>
-                            <li>Viaggi</li>
-                            <li>Storia</li>
-                        </ul>
+                <div className="info">
+                    <div className="scrittrice">
+                        <h3>Sono una scrittrice:</h3>
+                        <p>Sto scrivendo un libro urban fantasy incentrato su due temi: il contrasto tra il bene e
+                            il male, mai netto ma sfumato, e la trasformazione e l'evoluzione personale.</p>
                     </div>
 
-                    <div>
-                        <ul className="scrittrice">
-                            <p>Sono una scrittrice:</p>
-                            <li>Sto scrivendo un libro urban fantasy incentrato su due temi: il contrasto tra il bene e
-                                il male, mai netto ma sfumato, e la trasformazione e l'evoluzione personale.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div>
-
-                        <ul className="volontariato">
-                            <p>Faccio volontariato:</p>
-                            <li>Dono il sangue</li>
-                        </ul>
+                    <div className="volontariato">
+                        <h3>Faccio volontariato:</h3>
+                        <p>Dono il sangue dal 2024</p>
                     </div>
                 </div>
             </div>
-
-
+            <footer>
+                <p>© 2025 Natalia. Made with amore e tanto viola.</p>
+            </footer>
         </div>
+
+
     )
 }
 
