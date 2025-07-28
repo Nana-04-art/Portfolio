@@ -1,6 +1,4 @@
 import React, {useState} from 'react'
-import reactLogo from '../assets/react.svg'
-import viteLogo from '/vite.svg'
 import '../assets/style/palette.css';
 import '../assets/style/Design.css'
 import collezione from "../assets/collections/design.json";
@@ -24,6 +22,6 @@ function Design() {
         </>
     );
 
-};
+}
 
 export default Design;

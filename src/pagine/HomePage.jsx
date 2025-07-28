@@ -1,10 +1,6 @@
-import React, {useState} from 'react'
-import reactLogo from '../assets/react.svg'
-import viteLogo from '/vite.svg'
 import '../assets/style/palette.css';
 import '../assets/style/HomePage.css';
 import './Progetti.jsx'
-import {NavLink} from "react-router-dom";
 
 function HomePage() {
 
@@ -21,10 +17,10 @@ function HomePage() {
                     Ho creato questo sito per condividere alcuni dei progetti che ho realizzato durante questo corso.
                 </p>
                 <p>Non so se hai notato ma se guardi in alto a destra troverai tre
-                    pulsanti: <span class="colore1">"Home"</span>, <span class="colore2">"Progetti"</span> e <span
-                        class="colore3">"Design"</span> — ti invito a esplorare tutti i contenuti del sito e divertirti!<br/>
+                    pulsanti: <span className="colore1">"Home"</span>, <span className="colore2">"Progetti"</span> e <span
+                        className="colore3">"Design"</span> — ti invito a esplorare tutti i contenuti del sito e divertirti!<br/>
                 </p>
-                <p class="ultimo"> Se vuoi scoprire qualcosina in più su di me dai un’occhiata qui sotto:</p>
+                <p className="ultimo"> Se vuoi scoprire qualcosina in più su di me dai un’occhiata qui sotto:</p>
             </div>
             <div className="lista">
                 <h2>ALTRE INFORMAZIONI:</h2>

@@ -1,12 +1,9 @@
 import React, {useState} from 'react'
-import reactLogo from '../assets/react.svg'
-import viteLogo from '/vite.svg'
 import '../assets/style/palette.css';
 import '../assets/style/Proggetti.css';
 import collezione from '../assets/collections/progetti.json';
 
 function Progetti() {
-    const [imgInPopup, setImgInPopup] = useState(null);
     return (
         <>
             <div className="progettini">
@@ -24,6 +21,6 @@ function Progetti() {
             </div>
         </>
     );
-};
+}
 
 export default Progetti;
