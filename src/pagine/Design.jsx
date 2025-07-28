@@ -1,4 +1,3 @@
-import React, {useState} from 'react'
 import '../assets/style/palette.css';
 import '../assets/style/Design.css'
 import collezione from "../assets/collections/design.json";
