@@ -3,7 +3,7 @@
   "titolo": "Portfolio - Home",
   "descrizione": "Su di me",
   "link": "http://localhost:5173/",
-  "img": "public/foto/progettini/Portfolio-HomePage.png"
+  "img": "public/foto/progettini/Home.png"
 },
   {
     "id": 2,
@@ -17,14 +17,7 @@
     "titolo": "Portfolio - Design",
     "descrizione": "I mock-up ",
     "link": "http://localhost:5173/design",
-    "img": "public/foto/HomePage.png"
-  },
-  {
-    "id": 4,
-    "titolo": "Portfolio - Design",
-    "descrizione": "I mock-up ",
-    "link": "http://localhost:5173/design",
-    "img": "public/foto/HomePage.png"
+    "img": "public/foto/progettini/Design.png"
   }
 
 ]

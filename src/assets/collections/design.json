@@ -2,24 +2,19 @@
   {
     "id": 1,
     "titolo": "Home",
-    "wireframe": "public/foto/wireframe/HomePage-Wireframe.png",
-    "mockUp": "public/foto/mock-up/HomePage.png"
+    "wireframe": "public/foto/wireframe/HomePage.png",
+    "mockUp": "public/foto/mock-up/HomePage-MockUp.png"
   },
   {
     "id": 2,
     "titolo": "Progetti",
-    "wireframe": "public/foto/wireframe/HomePage-Wireframe.png",
-    "mockUp": "public/foto/mock-up/HomePage.png"
+    "wireframe": "public/foto/wireframe/Progetti.png",
+    "mockUp": "public/foto/mock-up/Progetti-MockUp.png"
   },
   {
     "id": 3,
     "titolo": "Design",
-    "wireframe": "public/foto/wireframe/HomePage-Wireframe.png",
-    "mockUp": "public/foto/mock-up/HomePage.png"
-  },
-  {
-    "id": 4,
-    "wireframe": "public/foto/wireframe/HomePage-Wireframe.png",
-    "mockUp": "public/foto/mock-up/HomePage.png"
+    "wireframe": "public/foto/wireframe/Design.png",
+    "mockUp": "public/foto/mock-up/Design-MockUp.png"
   }
 ]
