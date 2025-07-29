@@ -17,12 +17,6 @@ export const routes = [
             {
                 path: 'progetti',
                 element: <Progetti/>,
-                children: [
-                    /*{
-                        path: 'item',
-                        element: <Item />
-                    }*/
-                ]
             },
             {
                 path: 'design',
