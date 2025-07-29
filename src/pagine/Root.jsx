@@ -9,7 +9,7 @@ export const Root = () => {
             <div className="titolo">
                 <header>
                     <div className="barra">
-                        <img src="public/foto/logo/Logo.svg" alt="Logo" className="logo"/>
+                        <img src="/foto/logo/Logo.svg" alt="Logo" className="logo"/>
                         <h1>Portfolio di Natalia</h1>
                     </div>
                     <nav>
